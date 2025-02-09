@@ -1,0 +1,31 @@
+{
+  "name": "async-workshop",
+  "private": true,
+  "packageManager": "yarn@4.6.0",
+  "workspaces": [
+    "exercises/*"
+  ],
+  "scripts": {
+    "start:exercise": "cd $INIT_CWD && nodemon --quiet --watch \"src/exercise.ts\" --exec \"ts-node src/exercise.ts\"",
+    "check:solution": "cd $INIT_CWD && ts-node src/solution.ts",
+    "exercise-1": "yarn workspace exercise-1 start:exercise",
+    "solution-1": "yarn workspace exercise-1 check:solution"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@imccausl/eslint-config": "^3.0.1",
+    "@types/node": "^22.13.1",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "eslint": "^9.20.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import-x": "^4.6.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0"
+  }
+}
