@@ -1,5 +1,7 @@
 # Exercise 4
 
+This isn't really an exercise. The "Exercise" file contains some working demos of the examples below. The "solution" contains a way of combining promises and generators into a more "synchronous"-looking async code. This is kind of a precursor to async/await.
+
 ## Async/Await
 
 To really understand the details of how async/await works, let's take a quick look at generator functions.

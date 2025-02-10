@@ -68,7 +68,13 @@ export function expect(assertion: any) {
 
 export async function test(
     name: string,
-    callback: ({ page }: { page: Page }) => Promise<void>,
+    callback: ({
+        page,
+        browser,
+    }: {
+        page: Page
+        browser: Browser
+    }) => Promise<void>,
 ) {
     console.clear()
     console.log(`>>>>>>> STARTING TEST Running test: ${name}`)
@@ -76,7 +82,7 @@ export async function test(
     const page = browser.newPage()
 
     try {
-        await callback({ page })
+        await callback({ page, browser })
         console.log('Test completed successfully 🎉🎉🎉')
     } catch (error) {
         console.error(`Test failed: ${error}`)
