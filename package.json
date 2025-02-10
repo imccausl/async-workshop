@@ -8,8 +8,18 @@
   "scripts": {
     "start:exercise": "cd $INIT_CWD && nodemon --quiet --watch \"src/exercise.ts\" --exec \"ts-node src/exercise.ts\"",
     "check:solution": "cd $INIT_CWD && ts-node src/solution.ts",
-    "exercise-1": "yarn workspace exercise-1 start:exercise",
-    "solution-1": "yarn workspace exercise-1 check:solution"
+    "ex-1": "yarn workspace ex-1 start:exercise",
+    "solution-1": "yarn workspace ex-1 check:solution",
+    "ex-2": "yarn workspace ex-2 start:exercise",
+    "solution-2": "yarn workspace ex-2 check:solution",
+    "ex-3": "yarn workspace ex-3 start:exercise",
+    "solution-3": "yarn workspace ex-3 check:solution",
+    "ex-4": "yarn workspace ex-4 start:exercise",
+    "solution-4": "yarn workspace ex-4 check:solution",
+    "ex-5": "yarn workspace ex-5 start:exercise",
+    "solution-5": "yarn workspace ex-5 check:solution",
+    "ex-6": "yarn workspace ex-6 start:exercise",
+    "solution-6": "yarn workspace ex-6 check:solution"
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
