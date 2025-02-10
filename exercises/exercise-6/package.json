@@ -1,0 +1,7 @@
+{
+  "name": "ex-6",
+  "main": "src/exercise.ts",
+  "devDependencies": {
+    "@types/node": "^22.13.1"
+  }
+}
