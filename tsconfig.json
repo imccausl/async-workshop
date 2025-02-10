@@ -20,5 +20,14 @@
       "dom",
       "dom.iterable"
     ],
-  }
+  },
+  "include": [
+    "eslint.config.mjs",
+    "exercises/**/*"
+  ],
+  "exclude": [
+    ".yarn/**/*",
+    ".pnp.*",
+    ".vscode"
+  ]
 }
